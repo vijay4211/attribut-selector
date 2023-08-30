@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input ke under jo type hai text uske upper hame peropry apply karni hai. */
+        input[type="text"]{
+            width: 150px;
+            background-color: yellow;
+            /* input ko hamne block kiya q ki input full width le sake */
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* input ke under jo type button hai uske uper ham property apply  karne wale hai. */
+        input[type="button"]{
+            width: 120px;
+             margin-left: 35px;
+            /* button bhi inlie hai to block karke usko hamne full width ki hai */
+             display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styling Forms</h2>
+    <!-- method ka use ham server side ke under karte hai -->
+    <form action="" name="input" method="get">
+        <!-- input yaha inline element hai. -->
+        Firstname: <input type="text" name="name" value="Peter" size="20">
+        lastname: <input type="text" name="name" value="Griffin" size="20">
+        <input type="button" value="Example Button">
+    </form>
+</body>
+</html>
+
+<!-- dono input ke name same hone chahiye. dono input box ki value hamne bydefault Peter and Griffin rakha hai. -->
+
